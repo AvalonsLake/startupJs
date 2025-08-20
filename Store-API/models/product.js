@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 const mongoose = require("mongoose");
 
 const productSchema = new mongoose.Schema({
@@ -29,8 +27,8 @@ const productSchema = new mongoose.Schema({
       values: ["ikea", "liddy", "caressa", "marcos"],
       message: "{VALUE} is not supported",
     },
+    // enum:['ikea', 'liddy', 'caressa', 'marcos'],
   },
 });
 
 module.exports = mongoose.model("Product", productSchema);
->>>>>>> Stashed changes
