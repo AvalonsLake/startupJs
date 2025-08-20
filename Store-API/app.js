@@ -1,10 +1,10 @@
-require("dotenv").config;
+require("dotenv").config();
 // async errors
 
 const express = require("express");
 const app = express();
 
-const connectDB = require("./db/connect.js");
+const connectDB = require("./db/connect");
 const productsRouter = require("./routes/products");
 
 const notFoundMiddleware = require("./middleware/not-found");
